@@ -2,6 +2,7 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
     const newDepositAmount=document.getElementById('new-deposit')
     const newDepositString=newDepositAmount.value;
     const newDeposit= parseFloat(newDepositString);
+
     const previousDepositAmount=document.getElementById('previous-deposit');
     const previousDepositString=previousDepositAmount.innerText;
     const previousDeposit=parseFloat(previousDepositString);
@@ -15,7 +16,7 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
     totalDepositFlied.innerText=currentTotalDeposit;
 
     // clear the flied
-    newDepositAmount.value='';
-    
+    newDepositAmount.value=''; 
 
 })
+
