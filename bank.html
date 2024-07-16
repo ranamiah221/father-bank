@@ -17,7 +17,7 @@
         <div class="grid grid-cols-3 w-3/4 mx-auto gap-6 text-white">
             <div class="bg-blue-500 p-2 text-2xl font-medium p-8 rounded-lg">
                 <h3>Deposit </h3>
-                <h3>$<span>00</span></h3>
+                <h3>$<span id="previous-deposit">00</span></h3>
             </div>
             <div class="bg-amber-400 p-2 text-2xl font-medium p-8 rounded-lg">
                 <h3>Withdraw</h3>
@@ -25,7 +25,7 @@
             </div>
             <div class="bg-pink-500 p-2 text-2xl font-medium p-8 rounded-lg">
                 <h3>Total Balance </h3>
-                <h3>$<span>1240</span></h3>
+                <h3>$<span id="total-deposit">1240</span></h3>
             </div>
         </div>
        </section>
@@ -34,12 +34,12 @@
                 <div class="grid grid-cols-2 w-3/4 mx-auto gap-8 mt-8">
                     <div class="bg-green-400 rounded-lg pl-4">
                         <h2 class="text-2xl text-white font-medium mt-4">Please Deposit</h2>
-                        <input class="block w-9/12 mt-2 rounded-lg px-2" type="text">
+                        <input class="block w-9/12 mt-2 rounded-lg px-2" type="text" id="new-deposit" placeholder="Deposit">
                         <button id="deposit-btn" class="bg-pink-400 my-4 py-2 px-4 rounded-lg">Deposit</button>
                     </div>
                     <div class="bg-violet-500 rounded-lg pl-4">
                         <h2 class="text-2xl text-white font-medium mt-4">Please Withdraw</h2>
-                        <input class="block w-9/12 mt-2 rounded-lg px-2" type="text">
+                        <input class="block w-9/12 mt-2 rounded-lg px-2" type="text" id="new-withdraw" placeholder="Withdraw">
                         <button id="withdraw-btn" class="bg-pink-400 my-4 py-2 px-4 rounded-lg">Withdraw</button>
                     </div>
 
@@ -47,6 +47,6 @@
        </section>
         
     </main>
-    
+    <script src="js/bank.js"></script>
 </body>
 </html>
