@@ -4,5 +4,11 @@ document.getElementById('submit').addEventListener('click', function(){
     const email=userEmail.value;
     const userPassword=document.getElementById('password');
     const password=userPassword.value;
-    console.log(email,password);
+    if(email==='ranarasul21@gmail.com'&&password==='123456'){
+        window.location.href='bank.html';
+    }
+    else{
+        alert("Invalid Email or Password");
+    }
+    
 })
